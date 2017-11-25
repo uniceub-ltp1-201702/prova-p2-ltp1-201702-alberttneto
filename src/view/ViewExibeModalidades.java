@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 public class ViewExibeModalidades {
 
 	//Metodo construtor
-	public ViewExibeModalidades(ArrayList<String> esporte){
+	public ViewExibeModalidades(ArrayList<String>esporte){
 		
 		//Verificar se o esporte existe
 		if (esporte == null) {

@@ -30,7 +30,7 @@ public class BD {
 	//Ler linhas do arquivo Medalhas
 	public void carregarMedalhas(){
 		
-		ArrayList<String> linhas = this.dr.read(this.fileName);
+		ArrayList<String> linhas = this.dr.read(this.fileName2);
 		
 		//Percorrer arraylist
 		for (int i = 0; i < medalhas.size(); i++) {
@@ -48,7 +48,7 @@ public class BD {
 	//Ler linhas do arquivo Esporte
 	public void carregarEsportes(){
 		
-		ArrayList<String> linhas = this.dr.read(this.fileName2);
+		ArrayList<String> linhas = this.dr.read(this.fileName);
 		
 		//Percorrer arraylist
 		for (int i = 0; i < esportes.size(); i++) {
@@ -87,7 +87,7 @@ public class BD {
 		ArrayList<String> resultado = new ArrayList<String>();
 		
 		for (int i = 0; i < this.esportes.size(); i++) {
-			if (this.esportes.get(i).getModalidade().equals(esportes)) {
+			if (this.esportes.get(i).getEsporte().equals(esportes)) {
 				
 			}
 			
@@ -102,8 +102,9 @@ public class BD {
 	public ArrayList<Medalha> getMedalha(){
 		return medalhas;
 	}
-	
 	public ArrayList<Esporte> geEsportes(){
 		return esportes;
 	}
+	
+
 }
